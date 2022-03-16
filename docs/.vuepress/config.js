@@ -12,7 +12,7 @@ module.exports = {
         lastUpdatedText: 'Mis à jour le',
         contributorsText: "Contributeurs",
         navbar: [
-            { text: 'Accueil', link: '/' }
+            { text: 'Portfolio', link: 'http://ctrempe.fr' }
         ],
         sidebar: [
             { link: "/README.md", text: "Introduction" },
