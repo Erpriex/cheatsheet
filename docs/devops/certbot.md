@@ -7,10 +7,6 @@ Certbot c'est un programme en Python qui va se charger de contacter une autorit�
 
 <br>
 
-Dans cet exemple, notre serveur web fonctionnera avec Apache et l'OS utilisé sera Ubuntu.
-
-<br>
-
 ## Installation de Certbot
 Tout d'abord, la première étape est d'installer Certbot sur notre serveur.
 

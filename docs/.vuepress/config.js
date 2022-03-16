@@ -20,7 +20,8 @@ module.exports = {
                 text: "DevOps",
                 collapsible: true,
                 children: [
-                { link: "/devops/certbot.md", text: "Installer un certificat SSL avec Certbot (HTTPS)" }
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL avec Certbot (HTTPS)" },
+                    { link: "/devops/manageprocess.md", text: "Gérer les processus" }
                 ]
             }
         ]
