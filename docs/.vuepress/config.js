@@ -12,7 +12,7 @@ module.exports = {
         lastUpdatedText: 'Mis à jour le',
         contributorsText: "Contributeurs",
         navbar: [
-            { text: 'Portfolio', link: 'http://ctrempe.fr' }
+            { text: 'Portfolio', link: 'https://ctrempe.fr' }
         ],
         sidebar: [
             { link: "/README.md", text: "Introduction" },
@@ -20,6 +20,7 @@ module.exports = {
                 text: "DevOps",
                 collapsible: true,
                 children: [
+                    { link: "/devops/configsudo.md", text: "Configurer les sudoers (commande sudo)" },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL avec Certbot (HTTPS)" },
                     { link: "/devops/manageprocess.md", text: "Gérer les processus" }
                 ]
