@@ -5,7 +5,7 @@ La commande `sudo` permet à un utilisateur d'exécuter une commande en tant que
 Elle est installée par défaut sur certaines distributions comme Ubuntu, mais parfois ce n'est pas forcément le cas comme sur Debian.
 
 ## Installation de sudo
-Commençons par passer en root pour installer sudo :
+Tout d'abord, commençons par passer en root :
 ```sh
 $ su -
 ```
