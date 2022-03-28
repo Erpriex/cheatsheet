@@ -3,6 +3,8 @@
 ## Présentation de NodeJS
 NodeJS est un environnement open-source qui va nous permettre d'exécuter du JavaScript côté serveur et d'intéragir facilement avec différentes librairies et APIs, car il possède son propre gestionnaire de paquets : [NPM](https://www.npmjs.com/)
 
+<br>
+
 ## Installation de NodeJS
 ### Sur Windows et MacOS
 Ici, c'est facile ! Il suffit de télécharger l'installateur sur votre machine et de suivre les étapes ! 👌
@@ -29,6 +31,8 @@ $ sudo apt-get install -y nodejs
 # curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 # apt-get install -y nodejs
 ```
+
+<br>
 
 ## Premier projet avec NodeJS
 
