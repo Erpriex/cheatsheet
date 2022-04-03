@@ -36,5 +36,5 @@ $ sudo apt-get install -y nodejs
 
 ## Premier projet avec NodeJS
 
-::: warning In work !
+::: warning Soon !
 :::
