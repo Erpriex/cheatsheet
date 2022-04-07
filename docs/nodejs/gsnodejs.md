@@ -36,5 +36,31 @@ $ sudo apt-get install -y nodejs
 
 ## Premier projet avec NodeJS
 
-::: warning Soon !
+::: warning In work...
 :::
+
+Maintenant, place à la pratique ! Créons ensemble une application web sur NodeJS avec le framework [ExpressJS](https://www.npmjs.com/package/express).
+
+### Création de la structure du projet
+
+Après avoir créé le dossier du projet, exécutez la commande suivante à l'intérieur de celui-ci :
+
+```sh
+npm init
+```
+
+Appuyez sur 'Entrée' pour tous les champs demandé.
+
+NodeJS a maintenant créé un fichier `package.json` à la racine de notre projet.
+
+Maintenant, créons un fichier `index.js`, et copiez/collez cette ligne à l'intérieur de celui-ci :
+
+```js
+console.log("Hello world !\nJe suis un premier projet avec NodeJS :)");
+```
+
+Il est maintenant temps d'exécuter notre programme ! Exécutez la commande suivante :
+
+```sh
+node index.js
+```
