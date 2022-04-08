@@ -9,10 +9,10 @@ Dans un premier temps, nous allons afficher la liste des processus en cours d'ex
 Afficher la liste des processus [ID, Processus, %CPU, %RAM] :
 ```sh
 # Classé par utilisation du CPU
-$ ps -eo pid,args:60,pcpu,pmem --sort pcpu
+ps -eo pid,args:60,pcpu,pmem --sort pcpu
 
 # Classé par utilisation de la RAM
-$ ps -eo pid,args:60,pcpu,pmem --sort pmem
+ps -eo pid,args:60,pcpu,pmem --sort pmem
 ```
 
 Après avoir identifié le processus que nous souhaitons arrêter, nous allons retenir son ID (première colonne).
@@ -20,9 +20,9 @@ Après avoir identifié le processus que nous souhaitons arrêter, nous allons r
 ## Arrêter un processus
 Il est maintenant temps d'arrêter notre processus :
 ```sh
-$ sudo kill -9 <ID_du_processus>
+sudo kill -9 <ID_du_processus>
 
 # Exemple
-$ sudo kill -9 1226
+sudo kill -9 1226
 ```
 Et voilà qui est fait ! 😎

@@ -12,7 +12,7 @@ Tout d'abord, la première étape est d'installer Certbot sur notre serveur.
 
 Commencez par vérifier que `snapd` est installé sur votre machine :
 ```sh
-$ sudo snap
+sudo snap
 ```
 ::: tip
 Si 'snapd' n'est pas installé par défaut sur votre distribution, voici la documentation pour l'installer sur votre machine : [Installer snapd](https://snapcraft.io/docs/installing-snapd)
@@ -22,21 +22,21 @@ Si 'snapd' n'est pas installé par défaut sur votre distribution, voici la docu
 
 Vérifions que `snapd` est à jour avec la commande suivante :
 ```sh
-$ sudo snap install core; sudo snap refresh core
+sudo snap install core; sudo snap refresh core
 ```
 
 <br>
 
 Maintenant, installons Certbot !
 ```sh
-$ sudo snap install --classic certbot
+sudo snap install --classic certbot
 ```
 
 <br>
 
 A présent, il faut préparer l'exécution des commandes Certbot pour que celles-ci se déroulent sans problème :
 ```sh
-$ sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 <br>
@@ -50,10 +50,10 @@ En parallèle à l'installation du certificat SSL, Certbot peut se charger de co
 Installons un certificat SSL pour le domaine `monsuperdomaine.fr` sur notre serveur :
 ```sh
 # Avec un serveur web sous Apache
-$ sudo certbot --apache -d monsuperdomaine.fr
+sudo certbot --apache -d monsuperdomaine.fr
 
 # Avec un serveur web sous Nginx
-$ sudo certbot --nginx -d monsuperdomaine.fr
+sudo certbot --nginx -d monsuperdomaine.fr
 ```
 
 Et voilà, le tour est joué ! 😎

@@ -7,14 +7,15 @@ Elle est installée par défaut sur certaines distributions comme Ubuntu, mais p
 ## Installation de sudo
 Tout d'abord, commençons par passer en root :
 ```sh
-$ su -
+su -
 ```
 
 <br>
 
 Maintenant, installons sudo :
-```
-# apt-get install sudo
+```sh
+# En root
+apt-get install sudo
 ```
 
 <br>
@@ -24,14 +25,12 @@ Sudo est maintenant installé sur notre machine !
 ## Editer le fichier de configuration de sudo
 Le fichier de configuration de sudo se trouve ici `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
 
-_Avec Nano :_
-```
-# nano /etc/sudoers
-```
+```sh
+# Avec Nano :
+nano /etc/sudoers
 
-_Avec Vim :_
-```
-# vi /etc/sudoers
+# Avec Vim :
+vi /etc/sudoers
 ```
 
 <br>
@@ -89,8 +88,9 @@ Et oui, c'est aussi simple que ça 👌
 ::: tip
 Comme vous pouvez le voir, une permission est accordée par défaut pour le groupe `sudo`. Si vous souhaitez l'utiliser, vous devez simplement ajouter les utilisateurs concernés dans ce groupe :
 
-```
-# adduser ctrempe sudo
+```sh
+# En root, dans /root
+adduser ctrempe sudo
 ```
 :::
 
@@ -106,7 +106,7 @@ Et oui, il est possible de faire en sorte que le système ne demande pas le mot 
 
 Allons-y dans le concrès avec un exemple : admettons j'ai sur ma machine un utilisateur `cron` qui redémarre automatiquement mon serveur Apache à 5h du matin avec la commande `sudo systemctl restart apache2`.
 <br>
-Dans un premier temps, commande risque de ne pas passer car le mot de passe de l'utilisateur sera demandé 😔
+Dans un premier temps, la commande risque de ne pas passer car le mot de passe de l'utilisateur sera demandé 😔
 
 Pour cela, nous allons préciser dans la configuration de sudo que l'utilisateur `cron` est seulement autorisé à exécuter cette commande sans besoin de demander le mot de passe.
 
