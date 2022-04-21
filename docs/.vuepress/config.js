@@ -24,14 +24,6 @@ module.exports = {
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL avec Certbot (HTTPS)" },
                     { link: "/devops/manageprocess.md", text: "Gérer les processus" }
                 ]
-            },
-            {
-                text: "NodeJS",
-                collapsible: true,
-                children: [
-                    { link: "/nodejs/installnodejs.md", text: "Installer NodeJS sur sa machine" },
-                    { link: "/nodejs/pm2.md", text: "Héberger son projet NodeJS avec PM2" }
-                ]
             }
         ]
     },
