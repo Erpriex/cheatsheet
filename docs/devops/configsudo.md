@@ -23,7 +23,7 @@ apt-get install sudo
 Sudo est maintenant installé sur notre machine !
 
 ## Editer le fichier de configuration de sudo
-Le fichier de configuration de sudo se trouve ici `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
+Le fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
 
 ```sh
 # Avec Nano :
