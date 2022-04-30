@@ -18,11 +18,11 @@ ps -eo pid,args:60,pcpu,pmem --sort pmem
 Après avoir identifié le processus que nous souhaitons arrêter, nous allons retenir son ID (première colonne).
 
 ## Arrêter un processus
-Il est maintenant temps d'arrêter notre processus :
+Pour arrêter un processus, il suffit d'exécuter la commande suivante :
 ```sh
 sudo kill -9 <ID_du_processus>
 
 # Exemple
 sudo kill -9 1226
 ```
-Et voilà qui est fait ! 😎
+Et voilà ! 😎
