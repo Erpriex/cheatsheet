@@ -1,4 +1,4 @@
-# Configurer les sudoers (commande sudo)
+# Configurer les sudoers (sudo)
 
 La commande `sudo` permet à un utilisateur d'exécuter une commande en tant que 'root' (super utilisateur).
 

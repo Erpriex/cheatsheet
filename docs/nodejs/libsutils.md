@@ -1,8 +1,8 @@
-# Quelques librairies utiles
+# Quelques librairies NPM
 
 Voici une liste non exhaustive de librairies que j'ai eu l'occasion d'utiliser dans différents projets :
 
-- [discord.js](https://www.npmjs.com/package/discord.js) -> Pour créer des bots Discord
+- [discord.js](https://www.npmjs.com/package/discord.js) -> Pour créer des bots Discord (utiliser l'API Discord)
 - [lowdb](https://www.npmjs.com/package/lowdb) -> Pour utiliser un fichier JSON comme base de données
 - [twit](https://www.npmjs.com/package/twit) -> Pour utiliser l'API de Twitter
 - [ytdl-core](https://www.npmjs.com/package/ytdl-core) -> Pour récupérer des vidéos YouTube

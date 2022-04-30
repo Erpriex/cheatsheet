@@ -1,4 +1,4 @@
-# Installer un certificat SSL avec Certbot (HTTPS)
+# Installer un certificat SSL (HTTPS)
 
 ### Mais c'est quoi Certbot ?
 Certbot c'est un programme en Python qui va se charger de contacter une autorité de certification, telle que Let's Encrypt, qui va nous délivrer un certificat SSL pour le nom de domaine de notre choix sur notre serveur et ainsi permettre une navigation en HTTPS sur nos sites web.

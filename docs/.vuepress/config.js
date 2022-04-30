@@ -2,7 +2,7 @@ module.exports = {
     // site config
     lang: 'fr-FR',
     title: 'CheatSheet',
-    description: 'Cette documentation est un aide-mémoire qui recense différentes notions de développement et d\'administration système.',
+    description: 'Cette documentation est un aide-mémoire qui recense différentes notions de DevOps',
   
     // theme and its config
     theme: '@vuepress/theme-default',
@@ -20,17 +20,17 @@ module.exports = {
                 text: "DevOps",
                 collapsible: true,
                 children: [
-                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" },
                     { link: "/devops/configsudo.md", text: "Configurer les sudoers (sudo)" },
-                    { link: "/devops/manageprocess.md", text: "Gérer les processus" },
-                    { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" }
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    { link: "/devops/manageprocess.md", text: "Gérer les processus" }
                 ]
             },
             {
                 text: "NodeJS",
                 collapsible: true,
                 children: [
-                    { link: "/nodejs/libsutils.md", text: "Quelques librairies utiles" }
+                    { link: "/nodejs/libsutils.md", text: "Quelques librairies NPM" }
                 ]
             }
         ]

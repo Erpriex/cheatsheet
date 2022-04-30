@@ -2,7 +2,7 @@
 
 Cette documentation est un aide-mémoire qui recense différentes notions de développement et d'administration système.
 
-Elle a initialement été créée pour partager des compétences DevOps avec des amis.
+Elle a initialement été créée pour partager des compétences DevOps avec des amis et des collègues de promo.
 
 <br>
 
