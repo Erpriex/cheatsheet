@@ -20,16 +20,17 @@ module.exports = {
                 text: "DevOps",
                 collapsible: true,
                 children: [
-                    { link: "/devops/configsudo.md", text: "Configurer les sudoers (commande sudo)" },
-                    { link: "/devops/certbot.md", text: "Installer un certificat SSL avec Certbot (HTTPS)" },
-                    { link: "/devops/manageprocess.md", text: "Gérer les processus" }
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    { link: "/devops/configsudo.md", text: "Configurer les sudoers (sudo)" },
+                    { link: "/devops/manageprocess.md", text: "Gérer les processus" },
+                    { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" }
                 ]
             },
             {
                 text: "NodeJS",
                 collapsible: true,
                 children: [
-                    { link: "/nodejs/libsnpm.md", text: "Quelques librairies utiles" }
+                    { link: "/nodejs/libsutils.md", text: "Quelques librairies utiles" }
                 ]
             }
         ]
