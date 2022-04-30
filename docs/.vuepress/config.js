@@ -7,7 +7,7 @@ module.exports = {
     // theme and its config
     theme: '@vuepress/theme-default',
     head: [
-        ['meta', { name: 'theme-color', content: '#3aa675' }],
+        ['meta', { name: 'theme-color', content: '#3aa675' }]
     ],
     themeConfig: {
         //logo: 'https://vuejs.org/images/logo.png'
