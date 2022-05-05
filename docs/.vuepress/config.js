@@ -25,8 +25,9 @@ module.exports = {
                 children: [
                     { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" },
                     { link: "/devops/configsudo.md", text: "Configurer les sudoers (sudo)" },
-                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
-                    { link: "/devops/manageprocess.md", text: "Gérer les processus" }
+                    { link: "/devops/manageprocess.md", text: "Gérer les processus" },
+                    { link: "/devops/multisiteapache.md", text: "Héberger plusieurs sites web" },
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" }
                 ]
             },
             {
