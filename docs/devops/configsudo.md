@@ -23,7 +23,7 @@ apt-get install sudo
 Sudo est maintenant installé sur notre machine !
 
 ## Editer le fichier de configuration de sudo
-Le fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
+Le chemin d'accès du fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
 
 ```sh
 # Avec Nano :
@@ -33,25 +33,20 @@ nano /etc/sudoers
 vi /etc/sudoers
 ```
 
-<br>
-
-Voilà la configuration par défaut de sudo :
-
-
 ![Sudoers file](./assets-configsudo/sudoersfile.png)
 
 
 ## Ajouter un utilisateur dans les sudoers
 Notre objectif est maintenant de donner les permissions sudoers à l'utilisateur `ctrempe`.
 
-Pour cela, nous avons ajouter cette ligne dans le fichier de configuration :
+Pour cela, ajoutons cette ligne dans le fichier de configuration :
 ```
 ctrempe ALL=(ALL:ALL) ALL
 ```
 
 <br>
 
-Notre configuration doit ressembler à ceci :
+Notre configuration doit maintenant ressembler à ceci :
 
 
 ![User sudoers](./assets-configsudo/usersudoers.png)
@@ -65,11 +60,11 @@ Après avoir fermé l'éditeur de texte, les permissions sont immédiatement app
 
 <br>
 
-Et voilà, nous venons maintenant d'ajouter l'utilisateur `ctrempe` dans les sudoers
+Et voilà, nous venons d'ajouter l'utilisateur `ctrempe` dans les sudoers 😄
 
 
 ## Ajouter un groupe dans les sudoers
-Pour faciliter la gestion des permissions, nous pouvons accorder la permission pour l'ensemble des utilisateurs d'un groupe.
+Pour faciliter la gestion des permissions, nous pouvons accorder une autorisation pour l'ensemble des utilisateurs d'un groupe.
 
 La ligne reste la même que pour les utilisateurs, il faut simplement rajouter un `%` en préfixe pour préciser qu'il s'agit d'un groupe.
 
@@ -104,18 +99,18 @@ Privilégiez cette solution uniquement lorsque la commande est exécutée par un
 
 Et oui, il est possible de faire en sorte que le système ne demande pas le mot de passe de l'utilisateur lors de l'exécution d'une commande en sudo.
 
-Allons-y dans le concrès avec un exemple : admettons j'ai sur ma machine un utilisateur `cron` qui redémarre automatiquement mon serveur Apache à 5h du matin avec la commande `sudo systemctl restart apache2`.
+Allons-y dans le concrès avec un exemple : admettons que j'ai sur ma machine un utilisateur `rebootauto` qui redémarre automatiquement mon serveur Apache à 5h du matin avec la commande `sudo systemctl restart apache2`.
 <br>
-Dans un premier temps, la commande risque de ne pas passer car le mot de passe de l'utilisateur sera demandé 😔
+Dans un premier temps, la commande risque de ne pas passer car le mot de passe de l'utilisateur nous sera demandé 😔
 
-Pour cela, nous allons préciser dans la configuration de sudo que l'utilisateur `cron` est seulement autorisé à exécuter cette commande sans besoin de demander le mot de passe.
+Pour cela, nous allons préciser dans la configuration que l'utilisateur `rebootauto` est seulement autorisé à exécuter cette commande sans demander le mot de passe.
 
 <br>
 
 Il suffit de préciser ces paramètres dans le fichier de configuration :
 
 ```
-cron ALL=NOPASSWD: /bin/systemctl restart apache2
+rebootauto ALL=NOPASSWD: /bin/systemctl restart apache2
 ```
 
 ::: tip
@@ -124,6 +119,6 @@ Nous pouvons ajouter plusieurs commandes, pour cela il suffit de les séparer pa
 Exemple :
 
 ```
-cron ALL=NOPASSWD: /bin/systemctl restart apache2, /bin/systemctl restart mysql
+rebootauto ALL=NOPASSWD: /bin/systemctl restart apache2, /bin/systemctl restart mysql
 ```
 :::
