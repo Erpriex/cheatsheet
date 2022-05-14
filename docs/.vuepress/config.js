@@ -20,6 +20,14 @@ module.exports = {
         sidebar: [
             { link: "/README.md", text: "Introduction" },
             {
+                text: "Aides mémoires",
+                collapsible: true,
+                children: [
+                    { link: "/cheatsheet/git.md", text: "Git" },
+                    { link: "/cheatsheet/sql.md", text: "SQL" }
+                ]
+            },
+            {
                 text: "DevOps",
                 collapsible: true,
                 children: [
