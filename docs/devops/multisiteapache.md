@@ -29,7 +29,7 @@ Copiez maintenant cette configuration dans le fichier :
 
     DocumentRoot /var/www/html/site_test
 
-    <Directory /var/www/html/site_test.html>
+    <Directory /var/www/html/site_test>
         AllowOverride All
         Options -Indexes +FollowSymLinks
     </Directory>
