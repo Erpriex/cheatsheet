@@ -1,12 +1,10 @@
 # Gérer les processus
 
-Il arrive parfois qu'un processus ne répond plus, ou que le serveur soit saturé par manque de ressource.
-Dans ce cas là, nous souhaitons arrêter de force un processus.
+Dans l'exemple ci-dessous, nous allons arrêter de force un processus.
 
 ## Afficher la liste des processus
-Dans un premier temps, nous allons afficher la liste des processus en cours d'exécution sur notre machine.
+Dans un premier temps, nous allons afficher la liste des processus en cours d'exécution sur notre machine afin de cibler celui qui nous intéresse.
 
-Afficher la liste des processus :
 ```sh
 # Classé par utilisation du CPU
 ps -eo pid,args:60,pcpu,pmem --sort pcpu
@@ -15,13 +13,21 @@ ps -eo pid,args:60,pcpu,pmem --sort pcpu
 ps -eo pid,args:60,pcpu,pmem --sort pmem
 ```
 
-L'affichage ressemble à ceci [ID, Processus, %CPU, %RAM] :
-![Sudoers file](./assets-manageprocess/ps_header.png)
-![Sudoers file](./assets-manageprocess/ps_footer.png)
+L'affichage est classé sous forme de tableau [ID, Processus, %CPU, %RAM] :
+![PS Header](./assets-manageprocess/ps_header.png)
+![PS Footer](./assets-manageprocess/ps_footer.png)
 
 Dans cet exemple, le process `AskHimAPI` utilise environ 13,5% de la RAM de la machine.
 
 Après avoir identifié le processus que nous souhaitons arrêter, nous allons retenir son ID (première colonne).
+
+## Afficher les informations d'un processus
+La commande pour afficher les informations d'un processus est la suivante :
+```sh
+sudo systemctl status <ID_du_processus>
+```
+
+![Status process](./assets-manageprocess/status_pid.png)
 
 ## Arrêter un processus
 Pour arrêter le processus, il suffit d'exécuter la commande suivante :
