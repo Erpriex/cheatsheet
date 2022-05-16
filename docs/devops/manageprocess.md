@@ -17,7 +17,7 @@ L'affichage est classé sous forme de tableau [ID, Processus, %CPU, %RAM] :
 ![PS Header](./assets-manageprocess/ps_header.png)
 ![PS Footer](./assets-manageprocess/ps_footer.png)
 
-Dans cet exemple, le process `AskHimAPI` utilise environ 13,5% de la RAM de la machine.
+Dans cet exemple, le process `AskHimAPI` utilise environ 17,1% de la RAM de la machine.
 
 Après avoir identifié le processus que nous souhaitons arrêter, nous allons retenir son ID (première colonne).
 
