@@ -35,6 +35,6 @@ Pour arrêter le processus, il suffit d'exécuter la commande suivante :
 sudo kill -9 <ID_du_processus>
 
 # Exemple
-sudo kill -9 662
+sudo kill -9 663
 ```
 Et voilà ! 😎
