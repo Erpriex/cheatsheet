@@ -4,6 +4,11 @@
 [[toc]]
 :::
 
+### Supprimer un dossier non vide
+```sh
+sudo rm -rf MonSuperDossier/
+```
+
 ### Rendre un script exécutable
 ```sh
 sudo chmod u+x monsuperscript.sh
