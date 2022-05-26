@@ -35,7 +35,14 @@ module.exports = {
                     { link: "/devops/configsudo.md", text: "Configurer les sudoers (sudo)" },
                     { link: "/devops/manageprocess.md", text: "Gérer les processus" },
                     { link: "/devops/multisiteapache.md", text: "Héberger plusieurs sites web" },
-                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" }
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    {
+                        text: "Jenkins",
+                        collapsible: true,
+                        children: [
+                            { link: "/devops/jenkins/installjenkins.md", text: "Introduction et installation de Jenkins" }
+                        ]
+                    }
                 ]
             },
             {
