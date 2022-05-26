@@ -8,7 +8,7 @@
 ![Jenkins logo](./assets-installjenkins/jenkinslogo.png)
 
 ### Qu'est-ce que Jenkins ?
-Jenkins est un outil d'intégration continue et de déploiement continu (CI/CD) développé en Java. Il peut être installé sur Docker er tout système disposant d'un JRE (Java Runtime Environment). Un point fort de l'outil : son grand nombre de plugins permettant d'intéragir avec une variété de technologies.
+Jenkins est un outil d'intégration continue et de déploiement continu (CI/CD) développé en Java. Il peut être installé sur Docker et tout système disposant d'un JRE (Java Runtime Environment). Un point fort de l'outil : son grand nombre de plugins permettant d'intéragir avec une variété de technologies.
 
 ### L'intégration continue (CI) et le déploiement continu (CD)
 "L'inté quoi ??"<br>
