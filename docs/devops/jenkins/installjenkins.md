@@ -62,9 +62,12 @@ sudo apt-get install git
 ### Installation de Jenkins
 Parfait, maintenant nous pouvons installer Jenkins
 ```sh
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
 
 sudo apt-get update
 
@@ -91,7 +94,7 @@ sudo nano /usr/lib/systemd/system/jenkins.service
 
 ::: tip
 Utilisez la fonction de recherche de Nano : `CTRL + W`<br>
-Puis saisissez `JAVA_HOME` et appuyé sur Entrée
+Puis saisissez `JAVA_HOME` et appuyez sur Entrée
 ![Nano Search](./assets-installjenkins/nanosearch.png)
 :::
 
@@ -99,6 +102,14 @@ Puis saisissez `JAVA_HOME` et appuyé sur Entrée
 
 Une fois la ligne trouvée, décommentée là et enregistrez les modifications
 ![Nano JAVA_HOME](./assets-installjenkins/nanojavahome.png)
+
+<br>
+
+::: tip
+C'est aussi dans ce fichier de configuration que nous allons pourvoir configurer le port sur lequel va démarrer notre serveur Jenkins.<br>
+Par défaut, Jenkins se lance sur le port `8080`
+![Nano JENKINS_PORT](./assets-installjenkins/nanoport.png)
+:::
 
 <br>
 
@@ -116,5 +127,54 @@ sudo systemctl start jenkins
 
 <br>
 
-:::tip In work...
-:::
+### Premier démarrage de Jenkins
+
+Rendez-vous maintenant sur le navigateur ! Nous arrivons sur la page de démarrage de Jenkins
+
+![Jenkins init](./assets-installjenkins/jenkinsinit.png)
+
+<br>
+
+Comme indiqué, commençons par récupérer le mot de passe administrateur généré pour le copier/coller dans le navigateur
+```sh
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+![Jenkins Admin Password](./assets-installjenkins/jenkinsadminpassword.png)
+
+<br>
+
+Ensuite nous choisissons d'installer les plugins recommandés
+![Jenkins Select Plugins](./assets-installjenkins/jenkinsselectplugins.png)
+
+<br>
+
+Jenkins va à présent installer les différents plugins suggérés, il suffit de patienter..
+
+
+![Jenkins Install Plugins](./assets-installjenkins/jenkinsinstallplugins.png)
+
+<br>
+
+Création du premier compte administrateur
+
+
+![Jenkins Create User](./assets-installjenkins/jenkinscreateuser.png)
+
+<br>
+
+Configurons à présent l'URL avec laquelle les utilisateurs utiliserons Jenkins. 
+
+
+![Jenkins URL](./assets-installjenkins/jenkinsurl.png)
+
+<br>
+
+La configuration de Jenkins est enfin terminée !
+
+![Jenkins Finish](./assets-installjenkins/jenkinsfinish.png)
+
+<br>
+
+Jenkins est maintenant installé sur notre machine. C'est ici que tout commence à présent ! 😎
+
+![Jenkins Home](./assets-installjenkins/jenkinshome.png)
