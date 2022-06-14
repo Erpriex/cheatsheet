@@ -32,15 +32,15 @@ module.exports = {
                 collapsible: true,
                 children: [
                     { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" },
-                    { link: "/devops/configsudo.md", text: "Configurer les sudoers (sudo)" },
+                    { link: "/devops/sudo.md", text: "Configurer les sudoers (sudo)" },
                     { link: "/devops/manageprocess.md", text: "Gérer les processus" },
-                    { link: "/devops/multisiteapache.md", text: "Héberger plusieurs sites web" },
+                    { link: "/devops/virtualhost-apache.md", text: "Héberger plusieurs sites web" },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
                     {
                         text: "Jenkins",
                         collapsible: true,
                         children: [
-                            { link: "/devops/jenkins/installjenkins.md", text: "Introduction et installation de Jenkins" }
+                            { link: "/devops/jenkins/install-jenkins.md", text: "Introduction et installation de Jenkins" }
                         ]
                     }
                 ]

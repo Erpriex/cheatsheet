@@ -5,7 +5,7 @@
 :::
 
 ## Introduction
-![Jenkins logo](./assets-installjenkins/jenkinslogo.png)
+![Jenkins logo](./assets-install-jenkins/jenkinslogo.png)
 
 ### Qu'est-ce que Jenkins ?
 Jenkins est un outil d'intégration continue et de déploiement continu (CI/CD) développé en Java. Il peut être installé sur Docker et sur tout système disposant d'un JRE (Java Runtime Environment). Un point fort de l'outil : son grand nombre de plugins permettant d'intéragir avec une variété de technologies.
@@ -77,7 +77,7 @@ sudo apt-get install jenkins
 <br>
 
 :::warning Une erreur apparaît lors de l'installation ?
-![Jenkins install error](./assets-installjenkins/installerror.png)
+![Jenkins install error](./assets-install-jenkins/installerror.png)
 Pas de panique, c'est "normal" 😉<br>
 Tout est bien installé, l'erreur est simplement due au fait que Jenkins essaie de se démarrer avec Java 17
 :::
@@ -95,20 +95,20 @@ sudo nano /usr/lib/systemd/system/jenkins.service
 ::: tip
 Utilisez la fonction de recherche de Nano : `CTRL + W`<br>
 Puis saisissez `JAVA_HOME` et appuyez sur Entrée
-![Nano Search](./assets-installjenkins/nanosearch.png)
+![Nano Search](./assets-install-jenkins/nanosearch.png)
 :::
 
 <br>
 
 Une fois la ligne trouvée, décommentée là et enregistrez les modifications
-![Nano JAVA_HOME](./assets-installjenkins/nanojavahome.png)
+![Nano JAVA_HOME](./assets-install-jenkins/nanojavahome.png)
 
 <br>
 
 ::: tip
 C'est aussi dans ce fichier de configuration que nous allons pourvoir configurer le port sur lequel va démarrer notre serveur Jenkins.<br>
 Par défaut, Jenkins se lance sur le port `8080`
-![Nano JENKINS_PORT](./assets-installjenkins/nanoport.png)
+![Nano JENKINS_PORT](./assets-install-jenkins/nanoport.png)
 :::
 
 <br>
@@ -131,7 +131,7 @@ sudo systemctl start jenkins
 
 Rendez-vous maintenant sur le navigateur ! Nous arrivons sur la page de démarrage de Jenkins
 
-![Jenkins init](./assets-installjenkins/jenkinsinit.png)
+![Jenkins init](./assets-install-jenkins/jenkinsinit.png)
 
 <br>
 
@@ -139,42 +139,42 @@ Comme indiqué, commençons par récupérer le mot de passe administrateur gén�
 ```sh
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-![Jenkins Admin Password](./assets-installjenkins/jenkinsadminpassword.png)
+![Jenkins Admin Password](./assets-install-jenkins/jenkinsadminpassword.png)
 
 <br>
 
 Ensuite nous choisissons d'installer les plugins recommandés
-![Jenkins Select Plugins](./assets-installjenkins/jenkinsselectplugins.png)
+![Jenkins Select Plugins](./assets-install-jenkins/jenkinsselectplugins.png)
 
 <br>
 
 Jenkins va à présent installer les différents plugins suggérés, il suffit de patienter..
 
 
-![Jenkins Install Plugins](./assets-installjenkins/jenkinsinstallplugins.png)
+![Jenkins Install Plugins](./assets-install-jenkins/jenkinsinstallplugins.png)
 
 <br>
 
 Création du premier compte administrateur
 
 
-![Jenkins Create User](./assets-installjenkins/jenkinscreateuser.png)
+![Jenkins Create User](./assets-install-jenkins/jenkinscreateuser.png)
 
 <br>
 
 Configurons à présent l'URL avec laquelle les utilisateurs utiliserons Jenkins. 
 
 
-![Jenkins URL](./assets-installjenkins/jenkinsurl.png)
+![Jenkins URL](./assets-install-jenkins/jenkinsurl.png)
 
 <br>
 
 La configuration de Jenkins est enfin terminée !
 
-![Jenkins Finish](./assets-installjenkins/jenkinsfinish.png)
+![Jenkins Finish](./assets-install-jenkins/jenkinsfinish.png)
 
 <br>
 
 Jenkins est maintenant installé sur notre machine. C'est ici que tout commence à présent ! 😎
 
-![Jenkins Home](./assets-installjenkins/jenkinshome.png)
+![Jenkins Home](./assets-install-jenkins/jenkinshome.png)

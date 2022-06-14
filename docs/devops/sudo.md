@@ -33,7 +33,7 @@ nano /etc/sudoers
 vi /etc/sudoers
 ```
 
-![Sudoers file](./assets-configsudo/sudoersfile.png)
+![Sudoers file](./assets-sudo/sudoersfile.png)
 
 
 ## Ajouter un utilisateur dans les sudoers
@@ -49,13 +49,13 @@ ctrempe ALL=(ALL:ALL) ALL
 Notre configuration doit maintenant ressembler à ceci :
 
 
-![User sudoers](./assets-configsudo/usersudoers.png)
+![User sudoers](./assets-sudo/usersudoers.png)
 
 
 ::: tip
 Après avoir fermé l'éditeur de texte, les permissions sont immédiatement appliquées sur notre utilisateur. Un message de prévention apparaît lors de la première commande exécutée en sudo :
 
-![Test sudo](./assets-configsudo/testsudo.png)
+![Test sudo](./assets-sudo/testsudo.png)
 :::
 
 <br>
@@ -76,7 +76,7 @@ Exemple avec le groupe `admin` :
 
 Ce qui nous donne :
 
-![Group sudoers](./assets-configsudo/groupsudoers.png)
+![Group sudoers](./assets-sudo/groupsudoers.png)
 
 Et oui, c'est aussi simple que ça 👌
 
