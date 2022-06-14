@@ -29,7 +29,7 @@ Pour résumer, l'intégration continue permet donc de :
 ### Installation des prérequis
 Dans un premier temps, commençons par installer la dernière version de Java
 ```sh
-sudo apt-get install openjdk-17-jre
+sudo apt-get install openjdk-18-jre
 ```
 
 <br>
