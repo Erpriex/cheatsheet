@@ -1,10 +1,18 @@
+const { searchPlugin } = require('@vuepress/plugin-search')
+
 module.exports = {
-    // site config
     lang: 'fr-FR',
     title: 'CheatSheet',
     description: 'Cette documentation est un aide-mémoire qui recense différentes notions de DevOps',
-  
-    // theme and its config
+    plugins: [
+        searchPlugin({
+            locales: {
+              "/": {
+                placeholder: "Rechercher",
+              },
+            },
+        }),
+    ],
     theme: '@vuepress/theme-default',
     head: [
         ['meta', { name: 'theme-color', content: '#3aa675' }]
