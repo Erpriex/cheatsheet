@@ -1,5 +1,7 @@
 # Héberger plusieurs sites web
 
+![](./assets_virtualhost-apache/apache2_logo.png)
+
 Grâce aux hôtes virtuels sur Apache, nous allons pouvoir choisir le site web afficher en fonction du nom de domaine saisi par le visiteur.
 
 Chaque site possèdera son propre répertoire, sa propre configuration.
