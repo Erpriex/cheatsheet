@@ -31,10 +31,17 @@ module.exports = {
                 text: "DevOps",
                 collapsible: true,
                 children: [
-                    { link: "/devops/cmdcs.md", text: "Cheatsheet de commandes" },
+                    { link: "/devops/cheatsheet-commands.md", text: "Cheatsheet de commandes" },
                     { link: "/devops/sudo.md", text: "Configurer les sudoers (sudo)" },
-                    { link: "/devops/manageprocess.md", text: "Gérer les processus" },
-                    { link: "/devops/virtualhost-apache.md", text: "Héberger plusieurs sites web" },
+                    { link: "/devops/manage-process.md", text: "Gérer les processus" },
+                    {
+                        text: "Apache",
+                        collapsible: true,
+                        children: [
+                            { link: "/devops/apache/virtualhost-apache.md", text: "Héberger plusieurs sites web" },
+                            { link: "/devops/apache/virtualhost-examples.md", text: "Exemples de Virtual Hosts" },
+                        ]
+                    },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
                     {
                         text: "Jenkins",
@@ -43,13 +50,6 @@ module.exports = {
                             { link: "/devops/jenkins/install-jenkins.md", text: "Introduction et installation de Jenkins" }
                         ]
                     }
-                ]
-            },
-            {
-                text: "NodeJS",
-                collapsible: true,
-                children: [
-                    { link: "/nodejs/libsutils.md", text: "Quelques librairies NPM" }
                 ]
             }
         ]

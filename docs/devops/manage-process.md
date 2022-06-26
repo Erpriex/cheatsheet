@@ -14,8 +14,8 @@ ps -eo pid,args:60,pcpu,pmem --sort pmem
 ```
 
 L'affichage est classé sous forme de tableau [ID, Processus, %CPU, %RAM] :
-![PS Header](./assets-manageprocess/ps_header.png)
-![PS Footer](./assets-manageprocess/ps_footer.png)
+![](./assets_manage-process/ps_header.png)
+![](./assets_manage-process/ps_footer.png)
 
 Dans cet exemple, le process `AskHimAPI` utilise environ 17,1% de la RAM de la machine.
 
@@ -27,7 +27,7 @@ La commande pour afficher les informations d'un processus est la suivante :
 sudo systemctl status <ID_du_processus>
 ```
 
-![Status process](./assets-manageprocess/status_pid.png)
+![](./assets_manage-process/status_pid.png)
 
 ## Arrêter un processus
 Pour arrêter le processus, il suffit d'exécuter la commande suivante :

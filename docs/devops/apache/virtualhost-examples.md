@@ -1,26 +1,10 @@
-# Héberger plusieurs sites web
+# Exemples de Virtual Hosts
 
-Grâce aux hôtes virtuels sur Apache, nous allons pouvoir choisir quel site web afficher en fonction du nom de domaine utilisé par le visiteur.
+::: details Table des matières
+[[toc]]
+:::
 
-Chaque site possèdera son propre répertoire, sa propre configuration.
-
-<br>
-
-Pour cela, allez dans ce répertoire :
-```sh
-cd /etc/apache2/sites-available/
-```
-
-<br>
-
-Et créez un nouvel hôte virtuel :
-```sh
-sudo nano 001-site_test.conf
-```
-
-<br>
-
-Copiez maintenant cette configuration dans le fichier :
+## Le classique
 ```
 <VirtualHost *:80>
 
@@ -39,7 +23,7 @@ Copiez maintenant cette configuration dans le fichier :
 
 <br>
 
-Liste des paramètres utilisés :
+Voici une liste de quelques paramètres utiles :
 | Paramètre | Description |
 | -------------- | --------------------- |
 | `ServerAdmin`  | Adresse email affichée en cas d'erreur |
@@ -49,7 +33,7 @@ Liste des paramètres utilisés :
 
 <br>
 
-Liste des propriétés Directory et Options :
+Liste d'exemples de propriétés Directory et Options :
 | Propriété | Description |
 | -------------- | --------------------- |
 | `AllowOverride`  | Autoriser la modification de la configuration avec un fichier .htaccess |
@@ -63,23 +47,21 @@ En préfixe des options, ajoutez un **+** pour activer la propriété, et un **-
 Exemple ci-dessus : `Options -Indexes +FollowSymLinks`
 :::
 
-Et on enregistre le fichier !
-
 <br>
 
-Maintenant, activez l'hôte virtuel que nous venons de créer
-```sh
-sudo a2ensite 001-site_test
+## Proxy
 ```
-
-A présent, redémarrons la configuration d'Apache
-```sh
-sudo service apache2 restart
+<VirtualHost *:80>
+        ProxyPreserveHost On
+        ProxyRequests Off
+        ServerName test.ctrempe.fr
+        ProxyPass / http://monsupersite.fr:8080/
+        ProxyPassReverse / http://monsupersite.fr:8080/
+</VirtualHost>
 ```
-
-::: tip
-Si vous avez commis une erreur dans votre VirtualHost, le redémarrage d'Apache va échouer . Pour afficher l'erreur, utilisez cette commande :
+::: warning Et n'oubliez pas !
+Pensez à activer le module proxy d'Apache 😉
 ```sh
-/usr/sbin/apache2ctl configtest
+sudo a2enmod proxy proxy_http
 ```
 :::
