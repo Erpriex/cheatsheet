@@ -51,6 +51,19 @@ module.exports = {
                         ]
                     }
                 ]
+            },
+            {
+                text: "Java",
+                collapsible: true,
+                children: [
+                    {
+                        text: "SpringBoot",
+                        collapsible: false,
+                        children: [
+                            { link: "/java/springboot/firstproject-springboot.md", text: "Premier projet avec SpringBoot" }
+                        ]
+                    }
+                ]
             }
         ]
     },
