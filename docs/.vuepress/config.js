@@ -60,7 +60,7 @@ module.exports = {
                         text: "SpringBoot",
                         collapsible: false,
                         children: [
-                            { link: "/java/springboot/firstproject-springboot.md", text: "Premier projet avec SpringBoot" }
+                            { link: "/java/springboot/firstproject-springboot.md", text: "Créer une API avec SpringBoot" }
                         ]
                     }
                 ]

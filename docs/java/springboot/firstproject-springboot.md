@@ -1,4 +1,4 @@
-# Premier projet avec SpringBoot
+# Créer une API avec SpringBoot
 
 ::: details Table des matières
 [[toc]]
@@ -8,4 +8,6 @@
 ![](./assets_firstproject-springboot/spring-boot-logo.png)
 
 ### SpringBoot c'est quoi ?
-SpringBoot est un framework Java pour développer des micro-services, notamment des API REST.
+SpringBoot est un framework Java pour développer des microservices, tels que des API REST.
+
+### Des microservices ?
