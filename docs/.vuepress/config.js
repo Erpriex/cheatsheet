@@ -1,4 +1,5 @@
 const { defaultTheme } = require('@vuepress/theme-default')
+const { searchPlugin } = require('@vuepress/plugin-search')
 
 module.exports = {
     lang: 'fr-FR',
@@ -7,6 +8,16 @@ module.exports = {
   
     head: [
         ['meta', { name: 'theme-color', content: '#3aa675' }]
+    ],
+
+    plugins: [
+        searchPlugin({
+            locales: {
+                "/": {
+                    placeholder: "Rechercher",
+                },
+            },
+        }),
     ],
 
     theme: defaultTheme({
