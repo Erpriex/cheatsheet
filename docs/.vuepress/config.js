@@ -1,16 +1,15 @@
+const { defaultTheme } = require('@vuepress/theme-default')
+
 module.exports = {
-    // site config
     lang: 'fr-FR',
     title: 'CheatSheet',
     description: 'Cette documentation est un aide-mémoire qui recense différentes notions de DevOps',
   
-    // theme and its config
-    theme: '@vuepress/theme-default',
     head: [
         ['meta', { name: 'theme-color', content: '#3aa675' }]
     ],
-    themeConfig: {
-        //logo: 'https://vuejs.org/images/logo.png'
+
+    theme: defaultTheme({
         displayAllHeaders: true,
         lastUpdatedText: 'Mis à jour le',
         contributorsText: "Contributeurs",
@@ -66,5 +65,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-  }
+    }),
+}
