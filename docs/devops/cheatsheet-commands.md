@@ -4,6 +4,8 @@
 [[toc]]
 :::
 
+## Linux
+
 ### Supprimer un dossier non vide
 ```sh
 sudo rm -rf MonSuperDossier/
@@ -21,4 +23,14 @@ ps -eo pid,args:60,pcpu,pmem --sort pcpu
 
 # Classé par utilisation de la RAM
 ps -eo pid,args:60,pcpu,pmem --sort pmem
+```
+
+<br>
+
+## Git
+
+### Rollback un repo
+```sh
+git reset --hard <old-commit-id>
+git push -f <remote-name> <branch-name>
 ```
