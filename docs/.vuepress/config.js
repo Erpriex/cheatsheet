@@ -1,5 +1,6 @@
 const { defaultTheme } = require('@vuepress/theme-default')
 const { searchPlugin } = require('@vuepress/plugin-search')
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 
 module.exports = {
     lang: 'fr-FR',
@@ -18,6 +19,7 @@ module.exports = {
                 },
             },
         }),
+        googleAnalyticsPlugin({ 'id': 'G-ZL3F7HZREL' }),
     ],
 
     theme: defaultTheme({
