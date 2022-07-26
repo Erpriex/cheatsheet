@@ -65,14 +65,15 @@ module.exports = {
                 ]
             },
             {
-                text: "Java",
+                text: "Les APIs",
                 collapsible: true,
                 children: [
+                    { link: "/apis/apis.md", text: "Introduction sur les APIs" },
                     {
                         text: "SpringBoot",
-                        collapsible: false,
+                        collapsible: true,
                         children: [
-                            { link: "/java/springboot/firstproject-springboot.md", text: "Créer une API avec SpringBoot" }
+                            { link: "/apis/springboot/firstproject-springboot.md", text: "Créer une API avec SpringBoot" }
                         ]
                     }
                 ]
