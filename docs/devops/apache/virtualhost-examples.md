@@ -49,7 +49,7 @@ Exemple ci-dessus : `Options -Indexes +FollowSymLinks`
 
 <br>
 
-## Proxy
+## Reverse Proxy
 ```
 <VirtualHost *:80>
         ProxyPreserveHost On

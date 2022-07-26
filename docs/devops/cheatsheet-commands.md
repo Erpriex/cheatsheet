@@ -25,6 +25,15 @@ ps -eo pid,args:60,pcpu,pmem --sort pcpu
 ps -eo pid,args:60,pcpu,pmem --sort pmem
 ```
 
+### Télécharger un fichier/dossier via SSH (depuis sur un serveur distant)
+```sh
+# Un fichier
+scp user@ip:/path/to/file.txt ./file.txt
+
+# Un dossier
+scp -r user@ip:/path/to/folder ./folder
+```
+
 <br>
 
 ## Git

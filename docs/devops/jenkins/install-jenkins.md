@@ -25,6 +25,10 @@ Pour résumer, l'intégration continue permet donc de :
 
 <br>
 
+> La documentation de Jenkins est disponible [ici](https://www.jenkins.io/doc/)
+
+<br>
+
 ## Installation de Jenkins
 ### Installation des prérequis
 Dans un premier temps, commençons par installer la dernière version de Java
@@ -70,6 +74,8 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 
 sudo apt-get update
+
+sudo apt-get install fontconfig
 
 sudo apt-get install jenkins
 ```
@@ -122,7 +128,7 @@ sudo systemctl daemon-reload
 
 Et nous relançons Jenkins
 ```sh
-sudo systemctl start jenkins
+sudo systemctl restart jenkins
 ```
 
 <br>
