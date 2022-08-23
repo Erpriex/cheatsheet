@@ -43,3 +43,12 @@ scp -r user@ip:/path/to/folder ./folder
 git reset --hard <old-commit-id>
 git push -f <remote-name> <branch-name>
 ```
+
+### Fake delete
+```sh
+# Un fichier
+git rm --cached file.txt
+
+# Un dossier
+git rm --cached -r leDossier/
+```
