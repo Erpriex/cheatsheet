@@ -34,6 +34,11 @@ scp user@ip:/path/to/file.txt ./file.txt
 scp -r user@ip:/path/to/folder ./folder
 ```
 
+### Installer les prérequis pour les guest additions VirtualBox
+```sh
+sudo apt-get install build-essential linux-headers-`uname -r` dkms
+```
+
 <br>
 
 ## Git

@@ -77,6 +77,9 @@ sudo apt-get update
 
 sudo apt-get install jenkins
 ```
+:::tip
+Les commandes peuvent différer avec les versions récentes de Jenkins. Les commandes d'installation actuelles sont disponibles [ici](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)
+:::
 
 <br>
 
