@@ -13,7 +13,7 @@ Le plus souvent, une application client intéragit avec une API pour récupérer
 
 En image, ça donne ça 😅
 
-![](./assets_api/API_Infra.png)
+![](./assets_apis/API_Infra.png)
 
 L'API joue un rôle d'intermédiaire entre ces 2 instances.
 

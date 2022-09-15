@@ -75,7 +75,7 @@ module.exports = {
                 text: "Les APIs",
                 collapsible: true,
                 children: [
-                    { link: "/apis/api.md", text: "Introduction sur les APIs" },
+                    { link: "/apis/apis.md", text: "Introduction sur les APIs" },
                     {
                         text: "SpringBoot",
                         collapsible: true,
