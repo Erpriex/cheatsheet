@@ -41,6 +41,11 @@ Chaque requêtes à l'API utilise un type requête HTTP spécifique en fonction 
 
 <br>
 
+Quelques exemples extraits d'une documentation d'une API :
+![](./assets_apis/routes.png)
+
+<br>
+
 En général, une API REST renvoie les données au format JSON ou XML.
 
 Mais elle retourne également d'autres éléments importants, comme....
