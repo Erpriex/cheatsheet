@@ -1,0 +1,11 @@
+.search-box{
+    --search-input-width: 8.2rem;
+}
+
+.search-box input:focus {
+    --search-input-width: 15rem;
+}
+
+.search-box:hover{
+    --search-input-width: 15rem;
+}
