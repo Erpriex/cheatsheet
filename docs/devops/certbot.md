@@ -51,8 +51,6 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 Maintenant ça va être un jeu d'enfant !
 
-En parallèle à l'installation du certificat SSL, Certbot peut se charger de configurer notre serveur web automatiquement pour la prise en charge du certificat.
-
 Installons un certificat SSL pour le domaine `monsuperdomaine.fr` sur notre serveur :
 ```sh
 # Avec un serveur web sous Apache
@@ -62,10 +60,14 @@ sudo certbot --apache -d monsuperdomaine.fr
 sudo certbot --nginx -d monsuperdomaine.fr
 ```
 
+::: tip
+En précisant le paramètre de notre serveur web `--apache` ou `--nginx` dans la commande, Certbot a modifié automatiquement la configuration de notre serveur web.
+:::
+
+<br>
+
 Et voilà, le tour est joué ! 😎
 
 ::: warning Attention !
 Parfois, cela peut prendre plusieurs heures à se mettre en place. Un peu de patience.. 😉
 :::
-
-Certbot a également modifié la configuration de notre serveur web pour rediriger automatiquement en HTTPS lorsque une personne tente de consulter notre site en HTTP.
