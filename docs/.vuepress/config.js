@@ -32,6 +32,7 @@ module.exports = {
         ],
         sidebar: [
             { link: "/README.md", text: "Introduction" },
+            { link: "/ressources.md", text: "Ressources" },
             {
                 text: "Aides mémoires",
                 collapsible: true,
