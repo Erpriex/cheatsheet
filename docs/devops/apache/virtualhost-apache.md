@@ -2,13 +2,13 @@
 
 ![](./assets_virtualhost-apache/apache2_logo.png)
 
-Grâce aux hôtes virtuels sur Apache, nous allons pouvoir choisir le site web afficher en fonction du nom de domaine saisi par le visiteur.
+Grâce aux hôtes virtuels sur Apache, nous allons pouvoir héberger plusieurs sites web sur notre serveur.
 
-Chaque site possèdera son propre répertoire, sa propre configuration.
+Chaque site possèdera son propre répertoire et sa propre configuration.
 
 <br>
 
-L'heure est venu de créer notre premier Virtual Host sur Apache, c'est parti !
+L'heure est venu de créer notre premier Virtual Host sur Apache !
 
 Pour commencer, allez dans le répertoire des Virtual Hosts d'Apache :
 ```sh
@@ -37,7 +37,7 @@ sudo a2ensite 001-site_test
 
 <br>
 
-Parfait, ça devra faire l'affaire ! 👌<br>Redémarrons la configuration d'Apache
+Et on redémarre la configuration d'Apache
 ```sh
 sudo service apache2 restart
 ```

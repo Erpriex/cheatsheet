@@ -18,12 +18,8 @@ Maintenant, installons sudo :
 apt-get install sudo
 ```
 
-<br>
-
-Sudo est maintenant installé sur notre machine !
-
 ## Editer le fichier de configuration de sudo
-Le chemin d'accès du fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
+Le fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
 
 ```sh
 # Avec Nano :
@@ -37,7 +33,7 @@ vi /etc/sudoers
 
 
 ## Ajouter un utilisateur dans les sudoers
-Notre objectif est maintenant de donner les permissions sudoers à l'utilisateur `ctrempe`.
+Notre objectif est maintenant de donner la permission à l'utilisateur `ctrempe` d'exécuter des commandes en sudo.
 
 Pour cela, ajoutons cette ligne dans le fichier de configuration :
 ```
@@ -53,7 +49,7 @@ Notre configuration doit maintenant ressembler à ceci :
 
 
 ::: tip
-Après avoir fermé l'éditeur de texte, les permissions sont immédiatement appliquées sur notre utilisateur. Un message de prévention apparaît lors de la première commande exécutée en sudo :
+Après avoir fermé l'éditeur de texte, les permissions sont immédiatement appliquées sur notre utilisateur. Un message de prévention apparaît lors de la première commande exécutée en sudo
 
 ![](./assets_sudo/testsudo.png)
 :::
@@ -64,9 +60,9 @@ Et voilà, nous venons d'ajouter l'utilisateur `ctrempe` dans les sudoers 😄
 
 
 ## Ajouter un groupe dans les sudoers
-Pour faciliter la gestion des permissions, nous pouvons accorder une autorisation pour l'ensemble des utilisateurs d'un groupe.
+Pour nous faciliter la vie, nous pouvons accorder la permission pour l'ensemble des utilisateurs d'un groupe.
 
-La ligne reste la même que pour les utilisateurs, il faut simplement rajouter un `%` en préfixe pour préciser qu'il s'agit d'un groupe.
+La ligne reste la même que pour les utilisateurs, il faut simplement rajouter un `%` en préfixe pour cibler un groupe.
 
 Exemple avec le groupe `admin` :
 
@@ -80,13 +76,14 @@ Ce qui nous donne :
 
 Et oui, c'est aussi simple que ça 👌
 
-::: tip
-Comme vous pouvez le voir, une permission est accordée par défaut pour le groupe `sudo`. Si vous souhaitez l'utiliser, vous devez simplement ajouter les utilisateurs concernés dans ce groupe :
+::: tip Rappel
+La commande pour ajouter un utilisateur dans un groupe :
 
 ```sh
 # En root, dans /root
 adduser ctrempe sudo
 ```
+*Ici, nous avons ajouté l'utilisateur `ctrempe` dans le groupe `admin`*
 :::
 
 # Retirer la demande du mot de passe de l'utilisateur
@@ -94,16 +91,14 @@ adduser ctrempe sudo
 ::: danger Alors là, attention attention !!
 Nous sommes d'accord sur le fait que cette pratique est dangereuse en terme de sécurité.
 <br>
-Privilégiez cette solution uniquement lorsque la commande est exécutée par un programme. Et assurez-vous de créer un utilisateur sur votre machine spécifiquement pour ce service.
+Privilégiez cette solution uniquement lorsque la commande est exécutée par un programme. Et assurez-vous de créer un utilisateur spécifiquement pour ce service (sans autre permission supplémentaire).
 :::
+
+<br>
 
 Et oui, il est possible de faire en sorte que le système ne demande pas le mot de passe de l'utilisateur lors de l'exécution d'une commande en sudo.
 
-Allons-y dans le concrès avec un exemple : admettons que j'ai sur ma machine un utilisateur `rebootauto` qui redémarre automatiquement mon serveur Apache à 5h du matin avec la commande `sudo systemctl restart apache2`.
-<br>
-Dans un premier temps, la commande risque de ne pas passer car le mot de passe de l'utilisateur nous sera demandé 😔
-
-Pour cela, nous allons préciser dans la configuration que l'utilisateur `rebootauto` est seulement autorisé à exécuter cette commande sans demander le mot de passe.
+Pour cela, nous allons préciser dans la configuration que l'utilisateur `ctrempe` est seulement autorisé à exécuter une commande spécifique sans demander le mot de passe.
 
 <br>
 
@@ -114,9 +109,7 @@ rebootauto ALL=NOPASSWD: /bin/systemctl restart apache2
 ```
 
 ::: tip
-Nous pouvons ajouter plusieurs commandes, pour cela il suffit de les séparer par une virgule (**,**)
-<br>
-Exemple :
+Nous pouvons définir plusieurs commandes, pour cela il suffit de les séparer par une virgule **,**
 
 ```
 rebootauto ALL=NOPASSWD: /bin/systemctl restart apache2, /bin/systemctl restart mysql
