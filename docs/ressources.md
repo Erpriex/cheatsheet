@@ -40,6 +40,8 @@
 ### 📸 Illustrations
 * [Unsplash](https://unsplash.com/) : Des images libres de droits
 * [Des illustrations](https://icons8.com/illustrations?ref=lapaninja)
+* [This Person Does Not Exist](https://thispersondoesnotexist.com/) : Photos de profil générées par intelligence artificielle
+* [Lorem Picsum](https://picsum.photos/) : Génère des photos aléatoire de la taille souhaitée
 
 ### ☕ Outils pour le développement
 * [Bootstrap](https://getbootstrap.com/)
