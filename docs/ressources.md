@@ -9,16 +9,20 @@
 * [medium.com](https://medium.com/)
 * [Reddit /r/webdev](https://www.reddit.com/r/webdev/)
 * [Hacker News](https://news.ycombinator.com/)
+* [korben.info](https://korben.info/) : du contenu tech pour les bidouilleurs curieux
 
 ### 👷 DevOps
 * [Certbot](https://certbot.eff.org/instructions) : Installer certificat SSL (HTTPS)
 * [acms.sh](https://github.com/acmesh-official/acme.sh) : Équivalent Certbot, mais écrit en script shell
-* [Jenkins](https://www.jenkins.io/) : CI/CD
+* [Jenkins](https://www.jenkins.io/) : outil open source de CI/CD
+* [GitLab CI/CD ](https://docs.gitlab.com/ee/ci/) : CI/CD directement dans un dépôt GitLab.
+* [GitHub Actions](https://docs.github.com/en/actions) : CI/CD directement dans un dépôt GitHub.
 
 ### 🎨 Couleurs
 * [Color Picker & Choix de couleur](https://www.webfx.com/web-design/color-picker/)
 * [Couleurs RAL](http://couleursral.fr/)
 * [Coloors](https://coolors.co/generate) : Génère une palette de couleurs qui vont bien ensemble
+* [Image Color Picker](https://imagecolorpicker.com/) : récupére la couleur d'un pixel d'une image
 
 ### 🚀 Hébergement
 * [Netlify](https://www.netlify.com/) : CI/CD, Simple, "gratuit", avec une interface web de gestion
@@ -58,7 +62,7 @@
 * [CyberChef](https://gchq.github.io/CyberChef/) : Prototyper une chaîne de traitement de données
 * [Canva](https://www.canva.com/fr_fr/)
 * [filldb.info](http://filldb.info/) : Génère un jeu de données
-* [CodePen](https://codepen.io/)
+* [CodePen](https://codepen.io/) : Catalogue et éditeur de code en ligne, il permet ainsi, à une grande communauté de développeurs, de mettre leurs créations en publiques et open source, ce qui permet de s’en inspirer. 
 * [cssgradient.io](https://cssgradient.io/) : Générateur de gradient CSS
 * [Materiel.io](https://material.io/color/#!/?view.left=0&view.right=0&primary.color=F06292&secondary.color=E91E63)
 * [Dribbble](https://dribbble.com/)

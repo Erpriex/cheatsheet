@@ -38,7 +38,8 @@ module.exports = {
                 collapsible: true,
                 children: [
                     { link: "/cheatsheet/git.md", text: "Git" },
-                    { link: "/cheatsheet/sql.md", text: "SQL" }
+                    { link: "/cheatsheet/sql.md", text: "SQL" },
+                    { link: "/cheatsheet/docker.md", text: "Docker" }
                 ]
             },
             {
