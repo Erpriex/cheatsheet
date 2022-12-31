@@ -1,6 +1,6 @@
 # Introduction et installation de Jenkins
 
-::: details Table des matières
+::: tip Table des matières
 [[toc]]
 :::
 
@@ -39,12 +39,12 @@ sudo apt-get install openjdk-18-jre
 <br>
 
 :::warning Attention
-Jenkins n'est plus compatible à partir de Java 12, il nous faut donc également installer Java 11 sur notre machine.
+Jenkins est compatible jusqu'à Java 17 !
 :::
 
-Pas de problème, installons donc également Java 11
+Pas de problème, installons également Java 17 😎
 ```sh
-sudo apt-get install openjdk-11-jre
+sudo apt-get install openjdk-17-jre
 ```
 
 <br>

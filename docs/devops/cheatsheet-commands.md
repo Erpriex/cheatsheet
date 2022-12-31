@@ -1,6 +1,6 @@
 # Cheatsheet de commandes
 
-::: details Table des matières
+::: tip Table des matières
 [[toc]]
 :::
 
@@ -34,6 +34,19 @@ scp user@ip:/path/to/file.txt ./file.txt
 scp -r user@ip:/path/to/folder ./folder
 ```
 
+### Décompresser une archive tar.bz2
+```sh
+tar -xf maSuperArchive.tar.bz2
+```
+
+### Arrêter de force un processus
+```sh
+sudo kill -9 <ID_du_processus>
+
+# Exemple
+sudo kill -9 663
+```
+
 ### Installer les prérequis pour les guest additions VirtualBox
 ```sh
 sudo apt-get install build-essential linux-headers-`uname -r` dkms
@@ -56,4 +69,41 @@ git rm --cached file.txt
 
 # Un dossier
 git rm --cached -r leDossier/
+```
+
+<br>
+
+## MySQL
+
+### Créer un utilisateur
+```sh
+# Autorise la connexion depuis localhost uniquement
+CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+
+# Autorise la connexion depuis toutes les IP
+CREATE USER 'sammy'@'%' IDENTIFIED BY 'password';
+```
+
+### Accorder des permissions à un utilisateur
+```sh
+# Accorder toutes les permissions sur une base de données
+GRANT ALL PRIVILEGES ON database.* TO 'username'@'host';
+
+# Accorder toutes les permissions sur toutes les bases de données
+GRANT ALL PRIVILEGES ON * . * TO 'username'@'host';
+
+FLUSH PRIVILEGES;
+```
+
+<br>
+
+## Certbot
+
+### Installer un certificat SSL sur un domaine
+```sh
+# Avec un serveur web sous Apache
+sudo certbot --apache -d monsuperdomaine.fr
+
+# Avec un serveur web sous Nginx
+sudo certbot --nginx -d monsuperdomaine.fr
 ```

@@ -5,7 +5,7 @@ const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 module.exports = {
     lang: 'fr-FR',
     title: 'CheatSheet',
-    description: 'Cette documentation est un aide-mémoire qui recense différentes notions de DevOps',
+    description: 'Cette documentation est un aide-mémoire qui aborde différentes notions de développement et d\'administration système',
   
     head: [
         ['meta', { name: 'theme-color', content: '#3aa675' }]
@@ -33,14 +33,6 @@ module.exports = {
         sidebar: [
             { link: "/README.md", text: "Introduction" },
             { link: "/ressources.md", text: "Ressources" },
-            {
-                text: "Aides mémoires",
-                collapsible: true,
-                children: [
-                    { link: "/cheatsheet/git.md", text: "Git" },
-                    { link: "/cheatsheet/sql.md", text: "SQL" }
-                ]
-            },
             {
                 text: "DevOps",
                 collapsible: true,
@@ -77,16 +69,18 @@ module.exports = {
                 text: "Les APIs",
                 collapsible: true,
                 children: [
-                    { link: "/apis/apis.md", text: "Introduction sur les APIs" },
-                    {
-                        text: "SpringBoot",
-                        collapsible: true,
-                        children: [
-                            { link: "/apis/springboot/firstproject-springboot.md", text: "Créer une API avec SpringBoot" }
-                        ]
-                    }
+                    { link: "/apis/apis.md", text: "Introduction sur les APIs" }
                 ]
-            }
+            },
+            {
+                text: "Aides mémoires",
+                collapsible: true,
+                children: [
+                    { link: "/cheatsheet/git.md", text: "Git" },
+                    { link: "/cheatsheet/sql.md", text: "SQL" },
+                    { link: "/cheatsheet/docker.md", text: "Docker" }
+                ]
+            },
         ]
     }),
 }

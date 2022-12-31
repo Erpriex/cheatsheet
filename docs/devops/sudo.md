@@ -81,7 +81,7 @@ La commande pour ajouter un utilisateur dans un groupe :
 
 ```sh
 # En root, dans /root
-adduser ctrempe sudo
+adduser ctrempe admin
 ```
 *Ici, nous avons ajouté l'utilisateur `ctrempe` dans le groupe `admin`*
 :::

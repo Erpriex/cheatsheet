@@ -1,10 +1,11 @@
 # Introduction sur les APIs
 
-::: details Sommaire
+::: tip Sommaire
 [[toc]]
 :::
 
 ## Les APIs en général
+### De quoi s'agit-il ?
 Quiconque exerce un métier dans l'IT, a déjà plus ou moins entendu parler d'API. Mais de quoi s'agit-il exactement ?
 
 Une API (Application Programming Interface) est une interface qui va permettre d'échanger des données et/ou des fonctionnalités entre deux programmes.
@@ -18,6 +19,8 @@ En image, ça donne ça 😅
 L'API joue un rôle d'intermédiaire entre ces 2 instances.
 
 <br>
+
+### Les avantages
 
 La mise en place et l'utilisation d'une API permet plusieurs avantages :
 * Centraliser les données échangées, et ainsi de sécuriser les accès des différents clients
