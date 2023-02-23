@@ -81,9 +81,3 @@
 ### 😇 Bonnes pratiques
 * [Quelques règles de base (en 4 minutes)](https://jgthms.com/web-design-in-4-minutes/)
 * [Rappel sur le design](https://atlassian.design/)
-
-<br>
-
-::: tip Vous avez des liens à suggérer ?
-N'hésitez pas à apporter votre pierre à l'édifice : [lien](https://github.com/Erpriex/CheatSheet) 😉
-:::
