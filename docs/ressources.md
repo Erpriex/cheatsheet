@@ -77,7 +77,7 @@
 * [Des templates réutilisable](https://startbootstrap.com/?showPro=false&showAngular=false)
 * [Dataviz Catalogue](https://datavizcatalogue.com/) : Idées pour représentation graphique de données
 
-### 😇 Bonne pratique
+### 😇 Bonnes pratiques
 * [Quelques règles de base (en 4 minutes)](https://jgthms.com/web-design-in-4-minutes/)
 * [Rappel sur le design](https://atlassian.design/)
 
