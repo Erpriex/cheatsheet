@@ -66,7 +66,7 @@ module.exports = {
                 ]
             },
             {
-                text: "HTML/CSS",
+                text: "HTML / CSS",
                 collapsible: true,
                 children: [
                     { link: "/html-css/reset-css.md", text: "Nettoyage CSS" }
