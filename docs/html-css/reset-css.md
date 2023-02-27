@@ -2,7 +2,7 @@
 
 Une bonne pratique en CSS est d'utiliser un fichier de nettoyage afin d'éviter les problèmes de différences entre les navigateurs.
 
-Chaque navigateur pré-défini la hauteur de ligne, les marges, les en-têtes, etc.. L'utilisation de ce fichier permet de retirer ces configurations.
+Chaque navigateur pré-défini pour chaque pages sa hauteur de ligne, ses marges, ses en-têtes, etc.. L'utilisation de ce fichier permet de retirer ces configurations.
 
 <br>
 
