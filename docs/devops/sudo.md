@@ -22,11 +22,7 @@ apt-get install sudo
 Le fichier de configuration de sudo se trouve dans `/etc/sudoers`. Ouvrons-le avec un éditeur de texte :
 
 ```sh
-# Avec Nano :
 nano /etc/sudoers
-
-# Avec Vim :
-vi /etc/sudoers
 ```
 
 ![](./assets_sudo/sudoersfile.png)
