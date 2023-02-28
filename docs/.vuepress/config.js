@@ -39,7 +39,6 @@ module.exports = {
                 children: [
                     { link: "/devops/cheatsheet-commands.md", text: "Cheatsheet de commandes" },
                     { link: "/devops/sudo.md", text: "Configurer les sudoers (sudo)" },
-                    { link: "/devops/manage-process.md", text: "Gérer les processus" },
                     {
                         text: "Apache",
                         collapsible: true,

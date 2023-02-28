@@ -25,6 +25,21 @@ ps -eo pid,args:60,pcpu,pmem --sort pcpu
 ps -eo pid,args:60,pcpu,pmem --sort pmem
 ```
 
+### Monitorer les processus et les ressources (outil HTOP)
+```sh
+htop
+```
+L'article d'IT-CONNECT documente bien la prise en main de l'outil : [lien](https://www.it-connect.fr/visualiser-et-gerer-les-processus-sous-linux-avec-htop/)
+
+### Monitorer la RAM
+```sh
+# Afficher les valeurs en Go
+free -g
+
+# Afficher les valeurs en Mo
+free -m
+```
+
 ### Télécharger un fichier/dossier via SSH (depuis sur un serveur distant)
 ```sh
 # Un fichier
