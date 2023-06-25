@@ -27,7 +27,7 @@ module.exports = {
         lastUpdatedText: 'Mis à jour le',
         contributorsText: "Contributeurs",
         navbar: [
-            { text: 'Devblog', link: 'https://blog.trempe.dev' },
+            { text: 'Devblog', link: 'https://blog.ctrempe.fr' },
             { text: 'Portfolio', link: 'https://ctrempe.fr' }
         ],
         sidebar: [
