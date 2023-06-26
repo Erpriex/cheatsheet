@@ -47,13 +47,6 @@ module.exports = {
                             { link: "/devops/apache/virtualhost-examples.md", text: "Exemples de Virtual Hosts" },
                         ]
                     },
-                    {
-                        text: "APT",
-                        collapsible: true,
-                        children: [
-                            { link: "/devops/apt/sources.md", text: "Sources APT par défaut" },
-                        ]
-                    },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
                     {
                         text: "Jenkins",
@@ -69,13 +62,6 @@ module.exports = {
                 collapsible: true,
                 children: [
                     { link: "/html-css/reset-css.md", text: "Nettoyage CSS" }
-                ]
-            },
-            {
-                text: "Les APIs",
-                collapsible: true,
-                children: [
-                    { link: "/apis/apis.md", text: "Introduction sur les APIs" }
                 ]
             },
             {

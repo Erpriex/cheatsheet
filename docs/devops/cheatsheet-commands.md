@@ -6,16 +6,6 @@
 
 ## Linux
 
-### Supprimer un dossier non vide
-```sh
-sudo rm -rf MonSuperDossier/
-```
-
-### Rendre un script exécutable
-```sh
-sudo chmod u+x monsuperscript.sh
-```
-
 ### Afficher la liste des processus
 ```sh
 # Classé par utilisation du CPU
@@ -31,15 +21,6 @@ htop
 ```
 L'article d'IT-CONNECT documente bien la prise en main de l'outil : [lien](https://www.it-connect.fr/visualiser-et-gerer-les-processus-sous-linux-avec-htop/)
 
-### Monitorer la RAM
-```sh
-# Afficher les valeurs en Go
-free -g
-
-# Afficher les valeurs en Mo
-free -m
-```
-
 ### Télécharger un fichier/dossier via SSH (depuis sur un serveur distant)
 ```sh
 # Un fichier
@@ -47,11 +28,6 @@ scp user@ip:/path/to/file.txt ./file.txt
 
 # Un dossier
 scp -r user@ip:/path/to/folder ./folder
-```
-
-### Décompresser une archive tar.bz2
-```sh
-tar -xf maSuperArchive.tar.bz2
 ```
 
 ### Arrêter de force un processus
@@ -108,17 +84,4 @@ GRANT ALL PRIVILEGES ON database.* TO 'username'@'host';
 GRANT ALL PRIVILEGES ON * . * TO 'username'@'host';
 
 FLUSH PRIVILEGES;
-```
-
-<br>
-
-## Certbot
-
-### Installer un certificat SSL sur un domaine
-```sh
-# Avec un serveur web sous Apache
-sudo certbot --apache -d monsuperdomaine.fr
-
-# Avec un serveur web sous Nginx
-sudo certbot --nginx -d monsuperdomaine.fr
 ```
