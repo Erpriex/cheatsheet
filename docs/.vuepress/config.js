@@ -48,13 +48,7 @@ module.exports = {
                         ]
                     },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
-                    {
-                        text: "Jenkins",
-                        collapsible: true,
-                        children: [
-                            { link: "/devops/jenkins/install-jenkins.md", text: "Introduction et installation de Jenkins" }
-                        ]
-                    }
+                    { link: "/devops/install-jenkins.md", text: "Installation de Jenkins" }
                 ]
             },
             {
@@ -62,15 +56,6 @@ module.exports = {
                 collapsible: true,
                 children: [
                     { link: "/html-css/reset-css.md", text: "Nettoyage CSS" }
-                ]
-            },
-            {
-                text: "Aides mémoires",
-                collapsible: true,
-                children: [
-                    { link: "/cheatsheet/git.md", text: "Git" },
-                    { link: "/cheatsheet/sql.md", text: "SQL" },
-                    { link: "/cheatsheet/docker.md", text: "Docker" }
                 ]
             },
         ]
