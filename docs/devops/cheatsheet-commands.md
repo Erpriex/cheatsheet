@@ -85,3 +85,16 @@ GRANT ALL PRIVILEGES ON * . * TO 'username'@'host';
 
 FLUSH PRIVILEGES;
 ```
+
+<br>
+
+## Docker
+
+### Supprimer les images et conteneurs inutilisées
+```sh
+docker system prune
+docker system prune -a
+
+docker volume prune
+docker volume prune -a
+```

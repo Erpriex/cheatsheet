@@ -70,6 +70,6 @@ Le fichier `reset.css` doit être appelé en premier dans votre projet !
 :::
 
 ```html
-<link rel="stylesheet" 	href="css/reset.css" > <!-- Le reset.css en premier -->
-<link rel="stylesheet" 	href="css/styles.css" > <!-- Votre CSS ensuite -->
+<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" >
+<link rel="stylesheet" href="css/styles.css" >
 ```
