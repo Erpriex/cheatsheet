@@ -1,4 +1,4 @@
-# Introduction et installation de Jenkins
+# Installation de Jenkins
 
 ::: tip Table des matières
 [[toc]]
@@ -128,38 +128,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 <br>
 
-Ensuite nous choisissons d'installer les plugins recommandés
-![](./assets_install-jenkins/jenkinsselectplugins.png)
-
-<br>
-
-Jenkins va à présent installer les différents plugins suggérés, il suffit de patienter..
+Suivez ensuite chaque étape du tunnel d'installation
 
 
-![](./assets_install-jenkins/jenkinsinstallplugins.png)
-
-<br>
-
-Création du premier compte administrateur
-
-
-![](./assets_install-jenkins/jenkinscreateuser.png)
-
-<br>
-
-Configurons à présent l'URL avec laquelle les utilisateurs utiliserons Jenkins. 
-
-
-![](./assets_install-jenkins/jenkinsurl.png)
-
-<br>
-
-La configuration de Jenkins est enfin terminée !
-
-![](./assets_install-jenkins/jenkinsfinish.png)
-
-<br>
-
-Jenkins est maintenant installé sur notre machine. C'est ici que tout commence à présent ! 😎
+Jenkins est maintenant installé sur notre machine ! 😎
 
 ![](./assets_install-jenkins/jenkinshome.png)
