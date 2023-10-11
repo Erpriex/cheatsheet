@@ -37,7 +37,7 @@ module.exports = {
                 collapsible: false,
                 children: [
                     { link: "/devops/cheatsheet-commands.md", text: "Cheatsheet de commandes" },
-                    { link: "/devops/sudo.md", text: "Configurer les sudoers (sudo)" },
+                    { link: "/devops/sudo.md", text: "Configurer les sudoers" },
                     {
                         text: "Apache",
                         collapsible: true,
@@ -46,7 +46,7 @@ module.exports = {
                             { link: "/devops/apache/virtualhost-examples.md", text: "Exemples de Virtual Hosts" },
                         ]
                     },
-                    { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    { link: "/devops/certbot.md", text: "Installer un certificat SSL" },
                     { link: "/devops/update-nextcloud.md", text: "Mettre à jour Nextcloud" },
                     { link: "/devops/install-jenkins.md", text: "Installation de Jenkins" }
                 ]

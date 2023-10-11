@@ -1,4 +1,4 @@
-# Installer un certificat SSL (HTTPS)
+# Installer un certificat SSL
 
 Pour cela, nous allons utiliser Certbot !
 
