@@ -1,8 +1,7 @@
 # Introduction
 
-Cette documentation est un aide-mémoire qui aborde différentes notions de développement et d'administration système.
+Cette documentation est un aide-mémoire qui aborde différentes notions de DevOps.
 
-<br>
-
-Elle a initialement été créée pour aider des collègues de promo à installer leurs environnements de production.<br>
-Je continue aujourd'hui d'entretenir cette documentation sur mon temps libre.
+:::tip Le DevOps ?
+Le DevOps, une contraction de "Development" et "Operations", est une approche qui favorise la collaboration entre les équipes de développement de logiciels et les équipes d'exploitation informatique.
+:::

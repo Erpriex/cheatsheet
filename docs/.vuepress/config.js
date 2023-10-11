@@ -5,7 +5,7 @@ const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 module.exports = {
     lang: 'fr-FR',
     title: 'CheatSheet',
-    description: 'Cette documentation est un aide-mémoire qui aborde différentes notions de développement et d\'administration système',
+    description: 'Cette documentation est un aide-mémoire qui aborde différentes notions de DevOps',
   
     head: [
         ['meta', { name: 'theme-color', content: '#3aa675' }]
@@ -34,7 +34,7 @@ module.exports = {
             { link: "/ressources.md", text: "Ressources" },
             {
                 text: "DevOps",
-                collapsible: true,
+                collapsible: false,
                 children: [
                     { link: "/devops/cheatsheet-commands.md", text: "Cheatsheet de commandes" },
                     { link: "/devops/sudo.md", text: "Configurer les sudoers (sudo)" },
@@ -53,7 +53,7 @@ module.exports = {
             },
             {
                 text: "HTML / CSS",
-                collapsible: true,
+                collapsible: false,
                 children: [
                     { link: "/html-css/reset-css.md", text: "Nettoyage CSS" }
                 ]
