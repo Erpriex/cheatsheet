@@ -3,5 +3,5 @@
 Cette documentation est un aide-mémoire qui aborde différentes notions de DevOps.
 
 :::tip Le DevOps ?
-Le DevOps, une contraction de "Development" et "Operations", est une approche qui favorise la collaboration entre les équipes de développement de logiciels et les équipes d'exploitation informatique.
+Le DevOps, contraction de "Development" et "Operations" (exploitation), est une pratique technique unifiant les compétences de développement et d'administration système.
 :::
