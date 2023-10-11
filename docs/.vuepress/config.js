@@ -48,6 +48,7 @@ module.exports = {
                         ]
                     },
                     { link: "/devops/certbot.md", text: "Installer un certificat SSL (HTTPS)" },
+                    { link: "/devops/update-nextcloud.md", text: "Mettre à jour Nextcloud" },
                     { link: "/devops/install-jenkins.md", text: "Installation de Jenkins" }
                 ]
             },
