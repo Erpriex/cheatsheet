@@ -13,7 +13,7 @@ Une liste non-exhaustive de ressources que j'ai eu l'occasion d'utiliser
 * [GitLab CI/CD ](https://docs.gitlab.com/ee/ci/)
 * [GitHub Actions](https://docs.github.com/en/actions)
 * [Crontab.guru](https://crontab.guru/) : Editeur d'expressions Crontab
-* [ngrok](https://ngrok.com/) : Créer un tunnel de connexion externe (TCP ou HTTP) vers votre environnement de développement local sans avoir besoin d'ouvrir vos ports
+* [ngrok](https://ngrok.com/) : Créer un tunnel de connexion externe (TCP ou HTTP) vers votre environnement local sans avoir besoin d'ouvrir vos ports
 
 <br>
 
@@ -85,4 +85,4 @@ Une liste non-exhaustive de ressources que j'ai eu l'occasion d'utiliser
 
 ## 😇 Bonnes pratiques
 * [reset.css](https://meyerweb.com/eric/tools/css/reset/)
-* [Design patterns](https://refactoring.guru/fr/design-patterns/catalog) : Structure des design patterns
+* [Design patterns](https://refactoring.guru/fr/design-patterns/catalog)

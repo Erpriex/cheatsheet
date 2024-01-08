@@ -18,7 +18,7 @@ ctrempe ALL=(ALL:ALL) ALL
 ctrempe ALL=(ALL:ALL) /bin/systemctl start apache2, /bin/systemctl stop apache2
 
 # Autoriser tout un groupe
-%mongroupe  ALL=(ALL:ALL) ALL
+%mongroupe ALL=(ALL:ALL) ALL
 ```
 
 
