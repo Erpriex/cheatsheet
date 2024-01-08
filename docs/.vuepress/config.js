@@ -31,7 +31,7 @@ module.exports = {
         ],
         sidebar: [
             { link: "/README.md", text: "Introduction" },
-            { link: "/ressources.md", text: "Ressources" },
+            { link: "/resources.md", text: "Ressources" },
             {
                 text: "DevOps",
                 collapsible: false,
@@ -48,7 +48,7 @@ module.exports = {
                 text: "HTML / CSS",
                 collapsible: false,
                 children: [
-                    { link: "/html-css/reset-css.md", text: "Nettoyage CSS" }
+                    { link: "/html-css/reset-css.md", text: "Reset CSS" }
                 ]
             },
         ]
