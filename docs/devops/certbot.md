@@ -1,6 +1,4 @@
-# Installer un certificat SSL
-
-Pour cela, nous allons utiliser Certbot !
+# Certificat SSL / Certbot
 
 ![](./assets_certbot/certbot-logo.png)
 

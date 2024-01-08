@@ -1,4 +1,4 @@
-# Cheatsheet de commandes
+# Commandes
 
 ::: tip Table des matières
 [[toc]]
