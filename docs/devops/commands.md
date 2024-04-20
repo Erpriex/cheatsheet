@@ -90,6 +90,18 @@ FLUSH PRIVILEGES;
 
 ## Docker
 
+### Donner des droits
+```sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+### Stopper tous les containers en cours d'exécutions
+```sh
+docker stop $(docker ps -q)
+```
+
 ### Supprimer les images et conteneurs inutilisées
 ```sh
 docker system prune
