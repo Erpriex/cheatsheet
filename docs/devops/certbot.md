@@ -11,7 +11,7 @@ Certbot c'est un programme en Python qui va se charger de contacter une autorit�
 
 <br>
 
-## Installation de Certbot
+## Installation de Certbot (via SNAP)
 Tout d'abord, la première étape est d'installer Certbot sur notre serveur.
 
 Commencez par vérifier que `snapd` est installé sur votre machine :
@@ -44,6 +44,15 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 <br>
+
+## Installation de Certbot (via APT)
+
+```sh
+sudo apt-get install certbot
+
+# Plugin de configuration d'Apache
+sudo apt-get install python3-certbot-apache
+```
 
 ## Installer un certificat sur mon nom de domaine
 

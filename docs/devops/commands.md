@@ -21,7 +21,8 @@ htop
 ```
 L'article d'IT-CONNECT documente bien la prise en main de l'outil : [lien](https://www.it-connect.fr/visualiser-et-gerer-les-processus-sous-linux-avec-htop/)
 
-### Télécharger un fichier/dossier via SSH (depuis sur un serveur distant)
+### Télécharger un fichier/dossier via SCP
+Syntaxe : `scp <source> <distant>`
 ```sh
 # Un fichier
 scp user@ip:/path/to/file.txt ./file.txt

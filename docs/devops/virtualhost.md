@@ -28,8 +28,7 @@ Liste non-exhaustive des options du Directory :
 | Options | `FollowSymLinks` | Autoriser le suivi des liens symbolique |
 
 ::: tip
-En préfixe des options, ajoutez un **+** pour activer la propriété, et un **-** pour la désactiver.
-Exemple ci-dessus : `Options -Indexes +FollowSymLinks`
+En préfixe des options, ajoutez un **+** pour activer la propriété, et un **-** pour la désactiver -> `Options -Indexes +FollowSymLinks`
 :::
 
 <br>
@@ -70,3 +69,8 @@ Ajouter la ligne `RequestHeader set X-Forwarded-Proto "https"` permet d'assurer 
 Ajouter `$1` à la fin de l'URL permet d'ajouter les routes dans la redirection<br>
 Exemple : `http://google.com/$1`
 :::
+
+## Récupérer les erreurs des configurations
+```sh
+/usr/sbin/apache2ctl configtest
+```
