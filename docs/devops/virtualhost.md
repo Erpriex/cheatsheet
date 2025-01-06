@@ -44,13 +44,6 @@ En préfixe des options, ajoutez un **+** pour activer la propriété, et un **-
 </VirtualHost>
 ```
 
-::: tip Et n'oubliez pas !
-Pensez à activer le module proxy d'Apache 😉
-```sh
-sudo a2enmod proxy proxy_http
-```
-:::
-
 ::: warning Transmission HTTPS
 Ajouter la ligne `RequestHeader set X-Forwarded-Proto "https"` permet d'assurer la transmission HTTPS vers le serveur distant
 :::
@@ -70,7 +63,22 @@ Ajouter `$1` à la fin de l'URL permet d'ajouter les routes dans la redirection<
 Exemple : `http://google.com/$1`
 :::
 
+<br>
+
 ## Récupérer les erreurs des configurations
 ```sh
 /usr/sbin/apache2ctl configtest
+```
+
+<br>
+
+## Modules
+### Proxy
+```sh
+sudo a2enmod proxy proxy_http
+```
+
+### Headers
+```sh
+sudo a2enmod headers
 ```

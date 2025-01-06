@@ -30,7 +30,6 @@ module.exports = {
             { text: 'Portfolio', link: 'https://ctrempe.fr' }
         ],
         sidebar: [
-            { link: "/README.md", text: "Introduction" },
             { link: "/resources.md", text: "Ressources" },
             {
                 text: "DevOps",
@@ -39,9 +38,8 @@ module.exports = {
                     { link: "/devops/commands.md", text: "Commandes" },
                     { link: "/devops/sudo.md", text: "Sudoers" },
                     { link: "/devops/virtualhost.md", text: "VirtualHosts" },
-                    { link: "/devops/certbot.md", text: "Certificat SSL / Certbot" },
-                    { link: "/devops/update-nextcloud.md", text: "Mettre à jour Nextcloud" },
-                    { link: "/devops/install-jenkins.md", text: "Installation de Jenkins" }
+                    { link: "/devops/certbot.md", text: "Certbot" },
+                    { link: "/devops/install-jenkins.md", text: "Installation Jenkins" }
                 ]
             },
             {

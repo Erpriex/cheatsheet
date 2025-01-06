@@ -1,13 +1,5 @@
 # Reset CSS
 
-Une bonne pratique en CSS est d'utiliser un fichier de nettoyage afin d'éviter les problèmes de différences entre les navigateurs.
-
-Chaque navigateur prédéfinit pour chaque page sa hauteur de ligne, ses marges, ses en-têtes, etc.. L'utilisation de ce fichier permet de retirer ces configurations.
-
-<br>
-
-Vous pouvez utiliser le fichier `reset.css` de Eric Meyer :
-
 [reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
 ```css
@@ -63,11 +55,7 @@ table {
 
 <br>
 
-Pour utiliser le fichier dans votre projet :
-
-::: warning Attention
-Le fichier `reset.css` doit être appelé en premier dans votre projet !
-:::
+Utiliser le fichier dans le projet :
 
 ```html
 <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" >
