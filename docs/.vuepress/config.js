@@ -30,7 +30,7 @@ module.exports = {
             { text: 'Portfolio', link: 'https://ctrempe.fr' }
         ],
         sidebar: [
-            { link: "/resources.md", text: "Ressources" },
+            { link: "/README.md", text: "Ressources" },
             {
                 text: "DevOps",
                 collapsible: false,
